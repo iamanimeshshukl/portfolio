@@ -1,7 +1,4 @@
-import { aflacLogo, android, angular, cognizantLogo,
-     facebook, firebase, instagram, ionic, linkdin, mysql,
-      nodejs,
-      react, typescript, wellsLogo, wiuLogo, youtube } from "../assets"
+import {  android, angular, cognizantLogo, firebase,  ionic,  mysql,nodejs,react, typescript,  } from "../assets"
 
 export const AppText={
     hello:'Hello,',
@@ -13,7 +10,7 @@ export const AppText={
     UIUXDesigner:'UI/UX Designer',
     BackendDeveloper:'Backend Dev',
     FrontedDeveloper:'Frontend Dev',
-    Portfolio:'Porjects',
+    Portfolio:'Portfolio',
     Creative:'My Creative ',
     CompaniesI:'Companies I ',
     WorkedFor:'Worked For',
@@ -100,7 +97,7 @@ export const workDetail=[
     { 
         id:1,
         year:'2022',
-        compnayName:'10+2',
+        compnayName:'10+2 Senior Secondary',
         position:'Central Board of Secondary Education'
     },
     { 
@@ -123,18 +120,6 @@ export const CompanyImage=[
     {
         id:1,
         imageUrl:cognizantLogo
-    },
-    {
-        id:1,
-        imageUrl:wellsLogo
-    },
-    {
-        id:1,
-        imageUrl:aflacLogo
-    },
-    {
-        id:1,
-        imageUrl:wiuLogo
     }
 ]
 

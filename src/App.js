@@ -6,6 +6,7 @@ import Companies from './Components/Companies';
 import ContactUs from './Components/ContactUs';
 import Footer from './Components/Footer';
 import Skills from './Components/Skills';
+import WhatsAppButton from './Components/WhatsApp';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
       <Skills/>
       {/* Portfolio */}
       <Portfolio/>
-
+      <WhatsAppButton />
       {/* Companies */}
       <Companies/>
       {/* Contact Us */}

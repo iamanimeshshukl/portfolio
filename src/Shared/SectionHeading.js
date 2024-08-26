@@ -4,7 +4,7 @@ const SectionHeading = ({firstTitle,secondTitle}) => {
   return (
    <div>
      <h1 className='text-[40px] font-bold'>{firstTitle}
-        <span className='text-purple-600'>{secondTitle}</span></h1>
+        <span className='text-purple-500'>{secondTitle}</span></h1>
         
    </div>
   )

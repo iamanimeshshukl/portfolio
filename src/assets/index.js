@@ -26,9 +26,10 @@ import youtube from './youtube.png'
 import instagram from './Instagram.png'
 import facebook from './Facebook.png'
 import linkdin from './LinkedIn.png'
-
-
-
+import img1 from '../assets/project01.png'
+import img2 from '../assets/Screenshot (118).png'
+import img3 from '../assets/Screenshot (116).png'
+import img4 from '../assets/project03.jpg'
 
 
 
@@ -50,6 +51,6 @@ export {
     mysql,
     react,
     wave,
-    robo
+    robo,img1,img2,img3,img4
 
 }

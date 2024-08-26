@@ -1,66 +1,47 @@
-import React, { useEffect, useState } from 'react'
-import { AppText, portfolio } from '../Constants'
+import React from 'react'
+import { AppText } from '../Constants'
 import SectionHeading from '../Shared/SectionHeading';
-import {robo} from './../assets/index'
+import {robo , img1 ,img2 , img3 , img4} from './../assets/index'
+
 const Portfolio = () => {
 
-    const [portfolioList,setPortfolioList]=useState([]);
-    const [portfolioListOrg,setPortfolioListOrg]=useState([]);
-
-    useEffect(()=>{
-        
-        setPortfolioList(portfolio);
-        setPortfolioListOrg(portfolio)
-    },[])
-    const filterPortfolio=(type)=>{
-        if(type=='All')
-        {
-            setPortfolioList(portfolioListOrg);
-        }
-        else{
-           const result= portfolioListOrg.filter(item=>item.type==type);
-           setPortfolioList(result)
-           console.log(result) 
-        }
-    }
   return (
     <div className='mt-5 flex justify-center flex-col'>
         <div className='flex flex-row px-6 md:px-0 items-center justify-center'>
-        {/* <h1 className='text-[40px] font-bold'>{AppText.Creative}
-        <span className='text-purple-600'>{AppText.Portfolio}</span></h1> */}
+
         <SectionHeading firstTitle={AppText.Creative} secondTitle={AppText.Portfolio} />
         <img src={robo} className="w-[70px] ml-5 animate-bounce"/>
         </div>
-        <div className='flex flex-row justify-evenly gap-2 px-4 md:px-72'>
-            <button onClick={()=>filterPortfolio('All')} className='border-purple-600 border-2 
-            text-purple-600 focus:text-white
-            active:bg-purple-500 p-1 px-4 rounded-md
-            focus:ring-violet-300 focus:bg-purple-600 focus:ring '>All</button>
-             <button  onClick={()=>filterPortfolio('ui/ux')}  className='border-purple-600 border-2 
-            text-purple-600 focus:text-white
-            active:bg-purple-500 p-1 px-4 rounded-md
-            focus:ring-violet-300 focus:bg-purple-600 focus:ring '>UI/UX</button>
-             <button onClick={()=>filterPortfolio('website')} className='border-purple-600 border-2 
-            text-purple-600 focus:text-white
-            active:bg-purple-500 p-1 px-4 rounded-md
-            focus:ring-violet-300 focus:bg-purple-600 focus:ring '>Web App</button>
-             <button onClick={()=>filterPortfolio('mobile')} className='border-purple-600 border-2 
-            text-purple-600 focus:text-white
-            active:bg-purple-500 p-1 px-4 rounded-md
-            focus:ring-violet-300 focus:bg-purple-600 focus:ring '>Mobile App</button>
-        </div>
-        <div className='grid grid-cols-2 items-center content-center md:grid-cols-3 lg:grid-cols-3
+       <div>
+         <div className='grid grid-cols-2 items-center content-center md:grid-cols-3 lg:grid-cols-3
         md:px-24 lg:px-48 p-4 '>
-            {portfolioList.map((item,index)=>(
-                <div className='p-2 flex flex-col m-2 rounded-lg bg-purple-100
+                <div className='p-2 flex flex-col m-2 rounded-lg bg-purple-400
                 transition-all ease-in-out group hover:scale-110'>
-                    <img src={item.imageUrl} className="h-[180px] object-cover rounded-lg"/>
-                    <h1 className='text-[14px] group-hover:scale-110 mt-2 text-center  font-bold'>{item.title}</h1>
-                    <h1 className='text-[12px] text-gray-500 px-6 pb-3'>{item.desc}</h1>
-
+                  <a href='https://monkeycloth.vercel.app/'> <img src={img1} className="h-[180px] rounded-lg"/>
+                    <h1 className='text-[14px] group-hover:scale-110 mt-2 text-center  font-bold text-white'>Monkey</h1>
+                    <h1 className='text-[12px] text-white px-6 pb-3'>Explore my full-stack e-commerce project, built with React, Node.js, and MongoDB, offering a seamless shopping experience and robust backend.</h1></a> 
                 </div>
-            ))}
+                <div className='p-2 flex flex-col m-2 rounded-lg bg-purple-400
+                transition-all ease-in-out group hover:scale-110'>
+                  <a href=''> <img src={img4} className="h-[180px] rounded-lg"/>
+                    <h1 className='text-[14px] group-hover:scale-110 mt-2 text-center  text-white font-bold'>Movie Website</h1>
+                    <h1 className='text-[12px] text-white px-6 pb-3'>Discover my full-stack movie website project using React, Node.js, and MongoDB, integrated with the IMDb API for dynamic film data.</h1></a> 
+                </div>
+                <div className='p-2 flex flex-col m-2 rounded-lg bg-purple-400
+                transition-all ease-in-out group hover:scale-110'>
+                  <a href='https://sarpmitrachitra.vercel.app/'> <img src={img2} className="h-[180px] rounded-lg"/>
+                    <h1 className='text-[14px] group-hover:scale-110 mt-2 text-center text-white font-bold'>Sarpmitra-Chitra</h1>
+                    <h1 className='text-[12px] text-white px-6 pb-3'>Explore my full-stack NGO website project, built with HTML, CSS, and JavaScript, designed to support and showcase Snake NGO's mission.</h1></a> 
+                </div>
+                <div className='p-2 flex flex-col m-2 rounded-lg bg-purple-400
+                transition-all ease-in-out group hover:scale-110'>
+                  <a href=''> <img src={img3} className="h-[180px] rounded-lg"/>
+                    <h1 className='text-[14px] group-hover:scale-110 mt-2 text-center  text-white font-bold'>Portfolio Website</h1>
+                    <h1 className='text-[12px] text-white px-6 pb-3'>Showcasing my portfolio built with React and Tailwind CSS, highlighting sleek, responsive designs and interactive features. Explore my work!</h1></a> 
+                </div>
+            
         </div>
+       </div>
     </div>
   )
 }

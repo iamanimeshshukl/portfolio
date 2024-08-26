@@ -5,7 +5,7 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <div className="w-full p-[10px] flex justify-between items-center">
-      <img src={logo} className="h-[40px]" />
+      <img src={logo} className="h-[50px]" />
       <div>
         <ul className="hidden md:flex">
           <li className="menuItem hover:scale-110 hover:z-50 transition-all duration-300 ease-in-out">

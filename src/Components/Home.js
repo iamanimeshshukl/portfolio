@@ -31,11 +31,12 @@ const Home = () => {
 <div
   class="max-w-32 bg-transparent items-center justify-center flex border-2 border-sky-500 shadow-lg hover:bg-sky-500 text-sky-500 hover:text-white duration-300 cursor-pointer active:scale-[0.98]"
 >
-  <button class="px-5 py-2"><a class="" href="">Resume</a></button>
+  <button class="px-5 py-2"><a href="https://monkeycloth.vercel.app/">Monkey Store</a></button>
 </div>
 
             <br></br>
             <Social />
+            <br></br>
         </div>
         
         </div>

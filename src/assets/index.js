@@ -30,9 +30,12 @@ import img1 from '../assets/project01.png'
 import img2 from '../assets/Screenshot (118).png'
 import img3 from '../assets/Screenshot (116).png'
 import img4 from '../assets/project03.jpg'
-
-
-
+import Python from "../assets/Python.png"
+import Django from "../assets/django.png"
+import Tailwind from "../assets/tailwind.png"
+import javascript from "../assets/javascript.png"
+import Php from "../assets/Php.jfif"
+import C from "../assets/c.png"
 
 
 
@@ -47,10 +50,10 @@ export {
     android,
     gitlab,
     ionic,
-    firebase,
+    firebase,Django,
     mysql,
     react,
     wave,
-    robo,img1,img2,img3,img4
+    robo,img1,img2,img3,img4,Python,javascript,Tailwind,Php,C
 
 }

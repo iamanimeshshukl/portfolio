@@ -1,4 +1,4 @@
-import {  android, angular, cognizantLogo, firebase,  ionic,  mysql,nodejs,react, typescript,  } from "../assets"
+import {  android, cognizantLogo, firebase, Python, javascript, Tailwind , Django, C ,Php, mysql,nodejs,react, typescript,  } from "../assets"
 
 export const AppText={
     hello:'Hello,',
@@ -44,7 +44,7 @@ export const aboutSection=[
 export const skillsList=[
     {
         id:1,
-        icon:angular
+        icon:Python
     },
     {
         id:1,
@@ -64,7 +64,7 @@ export const skillsList=[
     },
     {
         id:1,
-        icon:ionic
+        icon:C
     },
     {
         id:1,
@@ -72,19 +72,19 @@ export const skillsList=[
     },
     {
         id:1,
-        icon:react
+        icon:Tailwind
     },
     {
         id:1,
-        icon:typescript
+        icon:javascript
     },
     {
         id:1,
-        icon:firebase
+        icon:Django
     },
     {
         id:1,
-        icon:android
+        icon:Php
     },
     {
         id:1,
@@ -96,19 +96,19 @@ export const skillsList=[
 export const workDetail=[
     { 
         id:1,
-        year:'2022',
+        year:'2021-22',
         compnayName:'10+2 Senior Secondary',
         position:'Central Board of Secondary Education'
     },
     { 
         id:1,
-        year:'2022',
+        year:'2022-24',
         compnayName:'Diploma in Computer Science & Engineering',
         position:'Government Polytechnic Unnao'
     },
     { 
         id:1,
-        year:'2024',
+        year:'2024-27',
         compnayName:'BTech, Electrical Engineering',
         position:'Harcourt Butler Technical University Kanpur'
     },

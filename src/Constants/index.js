@@ -10,7 +10,7 @@ export const AppText={
     UIUXDesigner:'UI/UX Designer',
     BackendDeveloper:'Backend Dev',
     FrontedDeveloper:'Frontend Dev',
-    Portfolio:'Portfolio',
+    Portfolio:'Projects',
     Creative:'My Creative ',
     CompaniesI:'Companies I ',
     WorkedFor:'Worked For',
